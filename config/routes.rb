@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'join' => 'home#join'
 
-  resources :contacts, only: [:new, :create]
+  resources :contacts, only: [:new, :create], path_names: { :new => ''}
   resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.
