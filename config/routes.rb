@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  root 'home#index'
 
-  get '/' => 'home#index'
+  get 'join' => 'home#join'
 
   resources :contacts, only: [:new, :create]
   resources :articles
