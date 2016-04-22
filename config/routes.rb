@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  get 'join' => 'home#join'
+#  get 'contacts' => 'contacts#new'
 
-  resources :contacts, only: [:new, :create], path_names: { :new => ''}
+  resource  :contacts, only: [:new, :create]   , path_names: { :new => ''}
   resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.

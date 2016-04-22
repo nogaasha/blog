@@ -20,13 +20,6 @@ ActiveRecord::Schema.define(version: 20160417172628) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "contacies", force: :cascade do |t|
-    t.string   "email"
-    t.text     "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "contacts", force: :cascade do |t|
     t.string   "email"
     t.text     "message"
