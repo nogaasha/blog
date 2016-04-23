@@ -1,9 +1,9 @@
 class ContactsController < ApplicationController
-  def new   #получить страницу с сервера
+  def new   # этот метод получает страницу с сервера
    end 
 
    def create
-       @contact = Contact.new(contact_params)    #отправить данные на сервер
+       @contact = Contact.new(contact_params)    #этот action отправляет данные на сервер
        if @contact.valid?
          @contact.save
        else
