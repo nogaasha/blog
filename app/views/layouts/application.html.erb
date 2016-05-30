@@ -7,7 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= link_to 'Sing_In!', new_user_session_path %>  | <%= link_to 'Sing_Out!', destroy_user_session_path, method: :delete %>
+  <br />
   <a href= "/users/sign_in">Sing In</a> |  <a href= "/users/sign_out" data-method="delete">Sing Out</a>
 
   <p class="notice"><%= notice %></p>
