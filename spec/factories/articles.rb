@@ -5,6 +5,7 @@ FactoryGirl.define do
 
     #создаём фабрику с названием artocle_woth_comments
     #для созданием статьи с несколькими комментариями
+    #
     factory :article_with_comments do
       #после создания article
       after :create do |article, evaluator|
